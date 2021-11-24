@@ -1,0 +1,27 @@
+package com.example.myapplication1
+
+import org.junit.Test
+
+import org.junit.Assert.*
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * See [testing documentation](http://d.android.com/tools/testing).
+ */
+class ExampleUnitTest {
+    @Test
+    fun addition_isCorrect() {
+        assertEquals(4, 2 + 2)
+    }
+
+    @Test
+    fun addition_getEvenChars1() {
+        assertEquals("", getEvenChars(""))
+        assertEquals("", getEvenChars("1"))
+        assertEquals("2", getEvenChars("12"))
+        assertEquals("24", getEvenChars("1234"))
+        assertEquals("24", getEvenChars("12345"))
+    }
+
+}
